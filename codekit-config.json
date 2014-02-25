@@ -33,26 +33,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/styles\/layout-sidebar-left.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/styles\/layout-sidebar-left.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/assets\/scripts\/section-page.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/scripts\/section-page.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/section-page-ck.js",
-      "fileType" : 64
-    },
     "\/layout-full-width.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -61,6 +41,24 @@
       "inputAbbreviatedPath" : "\/layout-full-width.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/assets\/styles\/layout-transcript.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/styles\/layout-transcript.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/assets\/styles\/layout-sidebar-left.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/styles\/layout-sidebar-left.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/assets\/styles\/plugins.less" : {
       "ignoreWasSetByUser" : 0,
@@ -75,15 +73,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/styles\/layout-transcript.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/styles\/layout-transcript.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/assets\/scripts\/selectivizr-min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -95,14 +84,16 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/selectivizr-min-ck.js",
       "fileType" : 64
     },
-    "\/assets\/styles\/layout-sidebar-right.css" : {
+    "\/assets\/scripts\/section-page.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/styles\/layout-sidebar-right.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/assets\/scripts\/section-page.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/section-page-ck.js",
+      "fileType" : 64
     },
     "\/assets\/scripts\/jquery-1.9.1.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -114,6 +105,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/scripts\/jquery-1.9.1.min-ck.js",
       "fileType" : 64
+    },
+    "\/assets\/styles\/layout-sidebar-right.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/styles\/layout-sidebar-right.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/assets\/styles\/common.less" : {
       "ignoreWasSetByUser" : 0,
@@ -128,16 +128,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/scripts\/html5.js" : {
+    "\/assets\/img\/ico\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/scripts\/html5.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/html5-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/img\/ico\/apple-touch-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/img\/ico\/apple-touch-icon.png",
+      "initialSize" : 3841,
+      "fileType" : 8192
     },
     "\/layout-sidebar-left.html" : {
       "ignoreWasSetByUser" : 0,
@@ -148,14 +148,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/layout-form.html" : {
+    "\/assets\/scripts\/html5.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/layout-form.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/assets\/scripts\/html5.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/html5-ck.js",
+      "fileType" : 64
     },
     "\/assets\/img\/ico\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
@@ -168,16 +170,14 @@
       "initialSize" : 2984,
       "fileType" : 8192
     },
-    "\/assets\/img\/ico\/apple-touch-icon.png" : {
+    "\/layout-form.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/img\/ico\/apple-touch-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/img\/ico\/apple-touch-icon.png",
-      "initialSize" : 3841,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/layout-form.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/assets\/styles\/theme.less" : {
       "ignoreWasSetByUser" : 0,
@@ -231,18 +231,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/assets\/styles\/main.less" : {
+    "\/assets\/scripts\/global.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/styles\/main.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/assets\/styles\/main.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/assets\/scripts\/global.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/scripts\/global-ck.js",
+      "fileType" : 64
     },
     "\/assets\/styles\/layout-full-width.css" : {
       "ignoreWasSetByUser" : 0,
@@ -264,17 +262,6 @@
       "outputAbbreviatedPath" : "\/assets\/scripts\/respond.min-ck.js",
       "fileType" : 64
     },
-    "\/assets\/scripts\/global.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/scripts\/global.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/scripts\/global-ck.js",
-      "fileType" : 64
-    },
     "\/layout-transcript.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -283,6 +270,19 @@
       "inputAbbreviatedPath" : "\/layout-transcript.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/assets\/styles\/main.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/styles\/main.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/styles\/main.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
