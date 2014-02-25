@@ -1,0 +1,156 @@
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Mixins Style Sheet
+
+   Credit
+   -----------------
+   Sections of this document
+   are compliments of:
+    + LESS Elements
+    + Preboot
+
+-------------------------------- */
+
+/* Variables
+-------------------------------- */
+
+// Grayscale
+@black-10: darken(#fff, 10%);
+@black-20: darken(#fff, 20%);
+@black-30: darken(#fff, 30%);
+@black-40: darken(#fff, 40%);
+@black-50: darken(#fff, 50%);
+@black-60: darken(#fff, 60%);
+@black-70: darken(#fff, 70%);
+@black-80: darken(#fff, 80%);
+@black-90: darken(#fff, 90%);
+
+// Scaffolding
+@body-background: #fff;
+@text-color: @black-80;
+@font-size-base: (15em/16em);
+@line-height-base: 1.4;
+
+// Brand Colors
+@color-primary: #005e81;
+@color-secondary: #f7941e;
+@color-tertiary: #c3d348;
+
+// Alerts
+@alert-success-background: #dff0d8;
+@alert-info-background: #d9edf7;
+@alert-warning-background: #fcf8e3;
+@alert-danger-background: #f2dede;
+
+// Links
+@link-color: #005e81;
+@link-color-hover: darken(@link-color, 15%);
+
+// Font Stacks
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Font Weights
+@font-weight-normal: 400;
+@font-weight-semibold: 600;
+@font-weight-bold: 700;
+@font-weight-extrabold: 800;
+
+// Form Input Placeholders
+@input-color-placeholder: lighten(@text-color, 50%);
+
+
+/* Common Breakpoints
+-------------------------------- */
+
+/* Extra Small: 320px / 16px = 20em */
+@break-xs: 20em;
+
+/* Small: 480px / 16px = 30em */
+@break-s: 30em;
+
+/* Medium: 700px / 16px = 43.75em */
+@break-m: 43.75em;
+
+/* Large: 900px / 16px = 56.25em */
+@break-l: 56.25em;
+
+/* Extra Large: 1100px / 16px = 68.75em */
+@break-xl: 68.75em;
+
+
+/* Vendor Prefixes
+-------------------------------- */
+
+// Selection Color
+@selection-color: #dcf0ff;
+
+// Rounded on All Sides
+.rounded(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+// Rounded on Some Sides
+.border-radius(@topright, @bottomright, @bottomleft, @topleft) {
+    -webkit-border-top-right-radius: @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius: @bottomleft;
+    -webkit-border-top-left-radius: @topleft;
+    -moz-border-radius-topright: @topright;
+    -moz-border-radius-bottomright: @bottomright;
+    -moz-border-radius-bottomleft: @bottomleft;
+    -moz-border-radius-topleft: @topleft;
+    border-top-right-radius: @topright;
+    border-bottom-right-radius: @bottomright;
+    border-bottom-left-radius: @bottomleft;
+    border-top-left-radius: @topleft;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+// Opacity
+.opacity(@opacity) {
+    opacity: @opacity;
+    @opacity-ie: @opacity * 100;
+    filter: ~"alpha(opacity=@{opacity-ie})"; // IE8
+}
+
+// Gradients
+.gradient(@color, @start, @stop) {
+    background: @color;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+    background: -ms-linear-gradient(bottom, @start, @stop);
+    background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+}
+
+// Drop Shadows
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+
+// Text Overflow
+.text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Retina Images
+.retina-image(@file-1x, @file-2x, @width-1x, @height-1x) {
+    background-image: url("@{file-1x}");
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url("@{file-2x}");
+        background-size: @width-1x @height-1x;
+    }
+}

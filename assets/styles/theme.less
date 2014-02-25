@@ -1,0 +1,348 @@
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Theme Style Sheet
+
+   Table of Contents:
+   -----------------------------
+   + Header
+   + Navigation
+   + Page Content
+   + Main
+   + Sidebar
+   + Footer
+
+-------------------------------- */
+
+/* Header
+-------------------------------- */
+
+.site-header {
+    background: #ddd;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 10px 0;
+    position: relative;
+
+    .site-branding {
+        text-align: center;
+        
+        a {
+            background: url("../img/logo.gif") no-repeat 0 0;
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin: 0 auto;
+            text-indent: -999em;
+        }
+
+        @media all and (min-width: @break-m) {
+            float: left;
+        }
+    }
+}
+
+
+/* Navigation
+-------------------------------- */
+
+/* Primary Navigation */
+
+.site-header .nav-primary {
+    font-weight: @font-weight-bold;
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0;
+    
+    li {
+        margin-left: 0;
+        border: 0;
+        background-image: none;
+        display: inline-block;
+
+        &.current a {
+            background-color: #777;
+            color: #fff;
+        }
+    }
+
+    a {
+        color: #333;
+        padding: 7px;
+        font-size: 0.9em;
+        display: block;
+        text-decoration: none;
+        border: 0;
+
+        &:hover, &:focus {
+            background-color: #bbb;
+            color: #222;
+        }
+    }
+
+    @media all and (min-width: @break-m) {
+        float: right;
+    }
+}
+
+/* Breadcrumb Navigation */
+
+.page-content {
+    text-align: left;
+    padding: 1.5em 0;
+}
+
+.nav-breadcrumb {
+    font-size: 0.75em;
+    line-height: 1.4;
+    margin: 0 0 2em;
+
+    a {
+        color: @black-50;
+    }
+
+    b {
+        font-size: 1.2em;
+        margin: 0 0.3em;
+    }
+}
+
+.back-to-top {
+    margin: 2.5em 0 1.5em;
+    display: block;
+
+    a {
+        background-color: #ccc;
+        color: @black-80;
+        font-size: 0.75em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+}
+
+
+/* Main
+-------------------------------- */
+
+main {
+    margin: 0 0 1.5em;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+
+    .article-meta {
+        font-size: 0.875em;
+        color: #777;
+    }
+
+    ul {
+        padding-left: 35px;
+        list-style: disc;
+        
+        ul {
+            margin-bottom: 0;
+            list-style: square;
+        }
+    }
+
+    ol {
+        padding-left: 35px;
+    }
+
+    dt {
+        font-weight: @font-weight-bold;
+    }
+
+    dd {
+        margin-bottom: 0.75em;
+        padding-left: 0.75em;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        line-height: 1.35;
+    }
+
+    blockquote {
+        border-left: 5px solid #bbb;
+        font-style: italic;
+        padding: 0 60px 0 30px;
+
+        p {
+            margin-bottom: 0.75em;
+        }
+    }
+}
+
+
+/* Sidebar
+-------------------------------- */
+
+.sidebar {
+    font-size: @font-size-base;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    text-align: left;
+
+    h3,  h4 {
+        font-size: 1.2em;
+        font-weight: @font-weight-bold;
+        margin: 0 0 0.5em;
+        color: @black-20;
+    }
+}
+
+
+/* Widgets */
+
+.widget {
+    margin: 0 0 1.5em;
+
+    p, ul, ol, dl {
+        margin-bottom: 1em;
+    }
+
+    &.panel {
+        background-color: #f1f1f1;
+        margin-bottom: 1.5em;
+        padding: 10px 10px 5px;
+        
+        h4 {
+            background-color: #ccc;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: @font-weight-bold;
+            margin: -10px -10px 10px;
+            padding: 5px 10px;
+            display: block;
+        }
+    }
+}
+
+
+/* Common
+-------------------------------- */
+
+.outline {
+    border: 1px solid #999;
+}
+
+.outline-pad {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+.sidebar .outline-pad {
+    padding: 3px;
+}
+
+/* Buttons */
+
+/* Colors can be added like this. */
+.btn-gray {
+    background: #bbb;
+    color: #333;
+
+    &:hover, &:focus {
+        color: #111;
+    }
+}
+
+/* Disabled */
+.btn-disabled {
+    background-color: #eee;
+    color: #888;
+    padding: 11px 20px;
+    cursor: not-allowed;
+    -webkit-appearance: none;
+
+    &:hover, &:focus {
+        background-color: #eee;
+        color: #888;
+    }
+}
+
+.btn-cancel {
+    border: 1px solid #bbb;
+    color: #777;
+}
+
+
+/* Footer
+-------------------------------- */
+
+.site-footer {
+    clear: both;
+    color: #86888a;
+    font-size: 0.8125em;
+    border-top: 2px solid #ebebeb;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    ul {
+        margin: 0 0 1em;
+        text-align: center;
+        display: inline-block;
+        
+        li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+        
+        li:first-child {
+            padding-left: 0;
+        }
+    }
+
+    a {
+        color: #5a5a5a;
+
+        &:hover, &:focus {
+            color: #222;
+        }
+    }
+
+    @media all and (min-width: @break-m) {
+    
+        .site-copyright {
+            float: left;
+        }
+    
+        .nav-utility {
+            float: right;
+        }
+    }
+}
+
+
+/* Breakpoints (if preferred)
+-------------------------------- */
+
+/* Base Styles */
+/* Insert base styles for Page or Section here. */
+
+/* Extra Small: 320px / 16px = 20em */
+@media all and (min-width: @break-xs) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Small: 480px / 16px = 30em */
+@media all and (min-width: @break-s) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Medium: 700px / 16px = @break-m */
+@media all and (min-width: @break-m) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Large: 900px / 16px = 56.25em */
+@media all and (min-width: @break-l) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Extra Large: 1100px / 16px = 68.75em */
+@media all and (min-width: @break-xl) {
+    /* Insert breakpoint styles here. */
+}
