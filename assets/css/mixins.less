@@ -140,6 +140,13 @@
     white-space: nowrap;
 }
 
+// Transition
+.transition(@duration, @ease) {
+    -webkit-transition: all @duration @ease;
+    -moz-transition: all @duration @ease;
+    transition: all @duration @ease;
+}
+
 // Retina Images
 .retina-image(@file-1x, @file-2x, @width-1x, @height-1x) {
     background-image: url("@{file-1x}");
