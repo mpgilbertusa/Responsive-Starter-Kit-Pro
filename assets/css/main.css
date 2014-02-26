@@ -193,22 +193,22 @@ input[type=checkbox] {
 }
 /* HTML5 placeholder attribute (don't combine into a group selector) */
 ::-webkit-input-placeholder {
-  color: #999999;
+  color: #cccccc;
   /* WebKit browsers */
 
 }
 :-moz-placeholder {
-  color: #999999;
+  color: #cccccc;
   /* Mozilla Firefox 4 to 18 */
 
 }
 ::-moz-placeholder {
-  color: #999999;
+  color: #cccccc;
   /* Mozilla Firefox 19+ */
 
 }
 :-ms-input-placeholder {
-  color: #999999;
+  color: #cccccc;
   /* Internet Explorer 10+ */
 
 }
