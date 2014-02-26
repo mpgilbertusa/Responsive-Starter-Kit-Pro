@@ -201,6 +201,21 @@ main {
             margin-bottom: 0.75em;
         }
     }
+    
+    .image-gallery {
+        display: inline-block;
+        margin: 0 0 1.5em;
+        
+        img {
+            display: block;
+            padding: 3px;
+            
+            @media all and (min-width: @break-m) {
+                display: inline-block;
+                padding: 3px 3px 0;
+            }
+        }
+    }
 }
 
 
