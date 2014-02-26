@@ -44,7 +44,7 @@ A [browsable demo](https://rawgithub.com/mpgilbertusa/Responsive-Starter-Kit-Pro
 * Modernizr for feature detection - http://modernizr.com/
 * Zurb Responsive Tables (for data tables) - https://github.com/zurb/responsive-tables
 * jQuery Validate for client-side validation on forms - http://bassistance.de/jquery-plugins/jquery-plugin-validation/
-* Riloadr (images, including Retina and scroll position support) - https://github.com/tubalmartin/riloadr
+* picturefill (for responsive images, including Retina support) - https://github.com/scottjehl/picturefill
 * FitVids (videos) - https://github.com/davatron5000/FitVids.js
 * fancyBox (modal dialogs) - https://github.com/fancyapps/fancyBox
 * WooThemes FlexSlider (content carousel) - https://github.com/woothemes/FlexSlider
