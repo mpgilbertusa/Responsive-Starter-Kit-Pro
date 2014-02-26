@@ -4,6 +4,10 @@ A highly functional toolkit to help jump-start a typical responsive web design p
 
 Sample HTML files are included to demonstrate possible layouts: style guide/sampler, left sidebar, right sidebar, three columns, full width, sample form, and audio/video transcript. There's a basic *theme.css* file in the *assets/style* directory. Feel free to edit, or even delete, this file as needed. It's been included for demonstration purposes only. It's not intended to influence visual and/or user experience design preferences.
 
+## Demo ##
+
+Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro/">sample layout pages</a> to see how everything works.
+
 ## General ##
 
 * **Responsive** layout with a fluid/elastic grid, not *adaptive* with multiple fixed-width breakpoints
