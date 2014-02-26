@@ -23,8 +23,12 @@
     background: #ddd;
     color: #fff;
     font-size: 0.875em;
-    padding: 10px 0;
+    padding: 10px 0 0;
     position: relative;
+
+    @media all and (min-width: @break-m) {
+        padding: 10px 0;
+    }
 
     .site-branding {
         text-align: center;
@@ -50,17 +54,23 @@
 
 /* Primary Navigation */
 
-.site-header .nav-primary {
+.nav-primary {
     font-weight: @font-weight-bold;
     background-color: transparent;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 0;
+    
+    ul {
+        margin: 0 -10px;
+        border-bottom: 1px solid #aaa;
+    }
     
     li {
         margin-left: 0;
         border: 0;
         background-image: none;
-        display: inline-block;
+        display: block;
+        border-top: 1px solid #aaa;
 
         &.current a {
             background-color: #777;
@@ -70,7 +80,7 @@
 
     a {
         color: #333;
-        padding: 7px;
+        padding: 0.75em;
         font-size: 0.9em;
         display: block;
         text-decoration: none;
@@ -84,6 +94,20 @@
 
     @media all and (min-width: @break-m) {
         float: right;
+        
+        ul {
+            margin: 0;
+            border-bottom: 0;
+        }
+        
+        li {
+            border-top: 0;
+            display: inline-block;
+        }
+        
+        a {
+            padding: 7px;
+        }
     }
 }
 
