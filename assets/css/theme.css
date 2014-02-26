@@ -37,6 +37,21 @@
 /* Extra Large: 1100px / 16px = 68.75em */
 /* Vendor Prefixes
 -------------------------------- */
+/* Web Fonts
+-------------------------------- */
+body {
+  font-family: "Gentium Book Basic", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.btn {
+  font-family: "Open Sans", sans-serif;
+}
 /* Header
 -------------------------------- */
 .site-header {
