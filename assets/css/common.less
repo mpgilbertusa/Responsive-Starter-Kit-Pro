@@ -11,6 +11,7 @@
    -----------------------------
    + Basics
    + Colored Buttons
+   + Collapsible Content
    + Non-semantic Helpers
    + Simple Grids
 
@@ -311,6 +312,32 @@ input[type=submit] {
     text-align: center;
     padding: 11px 20px;
     text-decoration: none;
+}
+
+
+/* Collapsible Content
+-------------------------------- */
+
+.show-hide {
+  
+    .toggle {
+        background: url(../img/ico/ico-toggle-down.png) no-repeat right center;
+        border-bottom: 1px solid #bbb;
+        margin-bottom: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer;
+    
+        &.active {
+            background: url(../img/ico/ico-toggle-up.png) no-repeat right center;
+        }
+    }
+  
+    .close-section {
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        margin-bottom: 1.5em;
+    }
 }
 
 
