@@ -161,13 +161,13 @@ body {
 }
 a {
   text-decoration: underline;
-  color: #005e81;
+  color: #0041b1;
   /* default link color */
 
 }
 a:hover,
 a:focus {
-  color: #002635;
+  color: #002565;
   /* default link hover/focus color */
 
 }
@@ -244,7 +244,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #005e81;
+  color: #0041b1;
   text-decoration: none;
 }
 h1 a:hover,
@@ -260,7 +260,7 @@ h4 a:focus,
 h5 a:focus,
 h6 a:focus {
   text-decoration: underline;
-  color: #002635;
+  color: #002565;
 }
 h1 {
   font-size: 2.5em;
