@@ -56,7 +56,8 @@ label,
 legend,
 input,
 select,
-textarea {
+textarea,
+.info-error {
   font-family: "Open Sans", sans-serif;
 }
 /* Header
