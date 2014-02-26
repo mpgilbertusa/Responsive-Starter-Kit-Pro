@@ -1,6 +1,6 @@
 # Responsive Starter Kit Pro #
 
-A highly functional toolkit to help jump-start a typical responsive web design project. This is a full-featured variation of the more basic [responsive starter kit](https://github.com/mpgilbertusa/Responsive-Starter-Kit) which was primary created for instructional purposes to introduce basic RWD concepts. This version includes the LESS pre-processor as well as a handful of add-ons for typical responsiveness and can be used on a variety of real-world projects.
+A highly functional toolkit to help jump-start a typical responsive web design project. This is a full-featured variation of the more basic [responsive starter kit](https://github.com/mpgilbertusa/Responsive-Starter-Kit) which was primarily created for instructional purposes to introduce basic RWD concepts. This version includes the LESS pre-processor as well as a handful of add-ons for typical responsiveness and can be used on a variety of real-world projects.
 
 Sample HTML files are included to demonstrate possible layouts: style guide/sampler, left sidebar, right sidebar, three columns, full width, sample form, and audio/video transcript. There's a basic *theme.css* file in the *assets/style* directory. Feel free to edit, or even delete, this file as needed. It's been included for demonstration purposes only. It's not intended to influence visual and/or user experience design preferences.
 
