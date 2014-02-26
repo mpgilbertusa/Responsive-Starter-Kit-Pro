@@ -15,20 +15,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Common Style Sheets -->
-    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Layout Style Sheet -->
-    <link rel="stylesheet" type="text/css" href="assets/styles/layout-sidebar-left.css">
+    <link rel="stylesheet" href="assets/css/layout-sidebar-left.css">
+    
+    <!-- Feature Style Sheets -->
+    <link rel="stylesheet" href="assets/css/responsive-tables.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
 
     <!-- Theme Style Sheet (rename as needed) -->
-    <link rel="stylesheet" type="text/css" href="assets/styles/theme.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
     <!-- Use v1.9.1 if IE 6-8 support is needed. -->
-    <script type="text/javascript" src="assets/scripts/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
 
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <script type="text/javascript" src="assets/scripts/respond.min.js"></script>
-    <script type="text/javascript" src="assets/scripts/selectivizr-min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/selectivizr-min.js"></script>
     <![endif]-->
 	
 	<!--[if lt IE 9]>
@@ -95,37 +100,138 @@
 
                         <section>
                         
-                            <p class="intro">The following add-ons are for <strong>demonstration purposes</strong> only. You may have other add-ons (plugins) that you prefer. Please use those if you're more comfortable with them. Hopefully this list will get you thinking about the full array of add-ons that could be used on a typical responsive site.</p>
+                            <p class="intro">The following add-ons are for <strong>demonstration purposes</strong> only. You may have other add-ons (plugins) that you prefer. Please use those if you're more comfortable with them. Hopefully this list will get you thinking about the full array of add-ons that could be used on a typical responsive site. The first add-on is a <a href="#modal-content" class="fancybox">modal dialog</a>.</p>
+                            
+                            <div id="modal-content" style="display: none;">
+                        
+                                <h2>Sample Modal Dialog</h2>
+                        
+                                <p>Regular paragraph {p} lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis.<p>
+                            
+                                <p>Regular paragraph {p} tellus est malesuada tellus, at luctus turpis elit sit amet quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue.</p>
+                        
+                                <p>Regular paragraph {p} lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis.<p>
+                        
+                            </div><!-- /#modal-content -->
                             
                             <hr>
                             
                             <h2>Content Carousel {h2}</h2>
                             
-                            <p>xyzzy</p>
-                            
-                            <hr>
-                            
-                            <h2>Tabs {h2}</h2>
-                            
-                            <p>xyzzy</p>
+                            <div class="slider">                                
+        						<div class="flexslider">
+                                    <ul class="slides">
+                                        <li><img src="http://placehold.it/320x200&text=Slide+One"></li>
+                                        <li><img src="http://placehold.it/320x200&text=Slide+Two"></li>
+                                        <li><img src="http://placehold.it/320x200&text=Slide+Three"></li>
+                                        <li><img src="http://placehold.it/320x200&text=Slide+Four"></li>
+                                        <li><img src="http://placehold.it/320x200&text=Slide+Five"></li>
+                                    </ul>
+                                </div>    
+                            </div><!-- /.slider -->
                             
                             <hr>
                             
                             <h2>Data Tables {h2}</h2>
                             
-                            <p>xyzzy</p>
+                            <table class="responsive" summary="This is a sample data table.">
+            					<thead>
+                                    <tr>
+                						<th scope="col">Header 1</th>
+                						<th scope="col">Header 2</th>
+                						<th scope="col">Header 3</th>
+                						<th scope="col">Header 4</th>
+                						<th scope="col">Header 5</th>
+                						<th scope="col">Header 6</th>
+                					</tr>
+                                </thead>
+                                <tbody>
+                					<tr>
+                						<td>row 1, cell 1</td>
+                						<td>row 1, cell 2</td>
+                						<td>row 1, cell 3</td>
+                						<td>row 1, cell 4</td>
+                						<td>row 1, cell 5</td>
+                						<td>row 1, cell 6</td>
+                					</tr>
+                					<tr>
+                						<td>row 2, cell 1</td>
+                						<td>row 2, cell 2</td>
+                						<td>row 2, cell 3</td>
+                						<td>row 2, cell 4</td>
+                						<td>row 2, cell 5</td>
+                						<td>row 2, cell 6</td>
+                					</tr>
+                					<tr>
+                						<td>row 3, cell 1</td>
+                						<td>row 3, cell 2</td>
+                						<td>row 3, cell 3</td>
+                						<td>row 3, cell 4</td>
+                						<td>row 3, cell 5</td>
+                						<td>row 3, cell 6</td>
+                					</tr>
+                					<tr>
+                						<td>row 4, cell 1</td>
+                						<td>row 4, cell 2</td>
+                						<td>row 4, cell 3</td>
+                						<td>row 4, cell 4</td>
+                						<td>row 4, cell 5</td>
+                						<td>row 4, cell 6</td>
+                					</tr>
+                                </tbody>
+                            </table>
                             
                             <hr>
                             
                             <h2>Videos {h2}</h2>
-                            
-                            <p>xyzzy</p>
+                    
+                            <div class="flexible-video">
+                                <iframe src="http://player.vimeo.com/video/50905661" width="700" height="394" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                    
+                            <p>
+                                <a href="http://player.vimeo.com/video/50905661" class="fancybox fancybox-media btn btn-gray">Modal Video &rsaquo;</a>
+                                <a href="layout-transcript.html" class="btn btn-gray">Text Transcript &rsaquo;</a>
+                            </p>
                             
                             <hr>
                             
                             <h2>Collapsible Content {h2}</h2>
                             
-                            <p>xyzzy</p>
+                            <p>The following sections of content toggle opened and closed. The main purpose is to save vertical space on tall pages. Each section is collapsed by default.</p>
+                            
+                            <div class="show-hide">
+
+                                <h3 class="toggle">Collapsible Section {h3}</h3>
+	       
+                                <div class="body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.</p>
+                                    <a href="javascript:;" class="close-section">Show Less ^</a>
+                                </div><!-- /.body -->
+                        
+                            </div><!-- /.show-hide -->
+
+                            <div class="show-hide">
+
+                                <h3 class="toggle">Collapsible Section {h3}</h3>
+	       
+                                <div class="body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.</p>
+                                    <a href="javascript:;" class="close-section">Show Less ^</a>
+                                </div><!-- /.body -->
+                        
+                            </div><!-- /.show-hide -->
+                    
+                            <div class="show-hide">
+
+                                <h3 class="toggle">Collapsible Section {h3}</h3>
+	       
+                                <div class="body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam.</p>
+                                    <a href="javascript:;" class="close-section">Show Less ^</a>
+                                </div><!-- /.body -->
+                        
+                            </div><!-- /.show-hide -->
 
                         </section>
 
@@ -143,7 +249,7 @@
 				
             </div><!-- /.page-content -->
                 
-            <div class="back-to-top right"><a href="#back-to-top-anchor">Back to Top</a></div>
+            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
         
         </div><!-- /.wrapper -->
 
@@ -171,13 +277,40 @@
 </div><!-- /.site-container -->
 
 <!-- iOS Orientation Change Fix - https://github.com/scottjehl/iOS-Orientationchange-Fix/blob/master/README.md -->
-<script type="text/javascript" src="assets/scripts/ios-orientationchange-fix.js"></script>
+<script src="assets/js/ios-orientationchange-fix.js"></script>
+
+<!-- picturefill for responsive images - https://github.com/scottjehl/picturefill -->
+<script src="assets/js/picturefill.js"></script>
+
+<!-- feature plugins, include as needed -->
+<script src="assets/js/responsive-tables.js"></script>
+<script src="assets/js/jquery.fancybox.pack.js"></script>
+<script src="assets/js/jquery.fancybox-media.js"></script>
+<script src="assets/js/jquery.flexslider-min.js"></script>
+<script src="assets/js/jquery.fitvids.js"></script>
 
 <!-- Global JavaScript Functions -->
-<script type="text/javascript" src="assets/scripts/global.js"></script>
+<script src="assets/js/global.js"></script>
 
 <!-- Page-specific JavaScript Functions (rename as needed) -->
-<script type="text/javascript" src="assets/scripts/section-page.js"></script>
+<script src="assets/js/section-page.js"></script>
+
+<!-- Flexslider Content Carousel -->
+<script>
+$(document).ready(function() {
+    // Flexslider responsive carousel
+    if ($(".flexslider").length > 0) {
+        $(".flexslider").flexslider({
+            animation: 'slide',
+            animationLoop: true,
+            slideshow: false,
+            itemWidth: 320,
+            // itemMargin: 5, // don't use this... it breaks iOS 6
+            move: 1
+        });
+    }
+});
+</script>
 
 </body>
 </html>
