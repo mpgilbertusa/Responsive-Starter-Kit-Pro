@@ -49,7 +49,14 @@ h4,
 h5,
 h6,
 nav,
-.btn {
+.btn,
+.btn-cancel,
+.btn-disabled,
+label,
+legend,
+input,
+select,
+textarea {
   font-family: "Open Sans", sans-serif;
 }
 /* Header
