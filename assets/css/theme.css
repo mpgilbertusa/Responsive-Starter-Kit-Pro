@@ -249,11 +249,17 @@ main .credit-box {
 }
 main .credit-box img {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 7px 0 0;
 }
 main .credit-box .body {
   float: right;
-  margin-top: 25px;
+  margin-top: 20px;
+}
+main .credit-box h3 {
+  font-size: 1em;
+  margin: 0 0 0.25em;
+  padding: 0 0 0.3em;
+  border-bottom: 1px solid #b3b3b3;
 }
 /* Sidebar
 -------------------------------- */
