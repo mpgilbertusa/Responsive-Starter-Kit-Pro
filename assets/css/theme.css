@@ -229,8 +229,8 @@ main .image-gallery img {
 }
 @media all and (min-width: 43.75em) {
   main .image-gallery img {
-    display: inline-block;
-    padding: 3px 3px 0;
+    float: left;
+    padding: 2px 4px;
   }
 }
 /* Sidebar
