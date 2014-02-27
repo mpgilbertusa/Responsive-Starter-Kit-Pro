@@ -442,6 +442,67 @@ input[type=submit] {
   text-align: right;
   margin-bottom: 1.5em;
 }
+/* Pagination
+-------------------------------- */
+.pagination {
+  text-align: center;
+  margin: 2em 0 1.5em;
+  font-weight: bold;
+}
+.pagination .info {
+  font-weight: normal;
+  font-size: 0.9375em;
+  color: #5e5e5e;
+  padding-top: 0.5em;
+}
+@media screen and (min-width: 43.75em) {
+  .pagination .info {
+    float: left;
+  }
+}
+.pagination ul {
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+@media screen and (min-width: 43.75em) {
+  .pagination ul {
+    text-align: right;
+  }
+}
+.pagination li {
+  display: inline-block;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+.pagination li a {
+  background-color: #e6e6e6;
+  display: block;
+  padding: 5px 10px;
+  height: 30px;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.pagination li a:hover,
+.pagination li a:focus {
+  background: #999999;
+  color: #fff;
+}
+.pagination li.current a {
+  background-color: #0041b1;
+  color: #fff;
+}
+.pagination li:nth-child(1) {
+  margin-left: 0;
+}
 /* Non-semantic Helpers
 -------------------------------- */
 .uppercase {
