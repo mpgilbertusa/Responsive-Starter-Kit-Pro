@@ -45,13 +45,23 @@ label, legend, input, select, textarea, .info-error,
         float: left;
         
         a {
-            background: url("../img/logo.gif") no-repeat 0 0;
+            background: url("../img/logo-1x.gif") no-repeat 0 0;
             width: 150px;
             height: 50px;
             display: block;
             margin: 0 auto 10px;
             text-indent: -999em;
             overflow: hidden;
+        }
+        
+        @media only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+            a {
+                background: url("../img/logo-2x.gif") no-repeat 0 0;
+                background-size: 150px 50px;
+            }
         }
     }
     
