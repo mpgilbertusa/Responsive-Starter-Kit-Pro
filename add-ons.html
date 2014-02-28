@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/responsive-tables.css">
     <link rel="stylesheet" href="assets/css/flexslider.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/easy-responsive-tabs.css">
 
     <!-- Theme Style Sheet (rename as needed) -->
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -62,7 +63,8 @@
 
             <div class="site-branding"><a href="xyz" title="Site Branding">Site Branding</a></div>
 
-            <nav role="navigation" class="nav-primary">
+            <a href="#nav-primary" id="nav-primary-link">Menu</a>
+            <nav role="navigation" class="nav-primary" id="nav-primary">
                 <h4 class="visually-hidden">Primary Navigation</h4>
                 <ul>
                     <li><a href="xyz">Primary Nav Link</a></li>
@@ -128,6 +130,63 @@
                                 <p>Regular paragraph {p} lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis.<p>
                         
                             </div><!-- /#modal-content -->
+                            
+                            <hr>
+                            
+                            <h2>Tabs</h2>
+                            
+                            <h3>Horizontal Tabs</h3>
+                            
+                            <div id="tab-horizontal">
+                                <ul class="resp-tabs-list">
+                                    <li>Tab 1</li>
+                                    <li>Tab 2</li>
+                                    <li>Tab 3</li>
+                                </ul>
+                                <div class="resp-tabs-container">
+                                    <div>
+                                        <h2>Tab 1 Content</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Tab 2 Content</h2>
+                                        <p>Proin consectetur nibh quis Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravid urna gravid eget erat suscipit in malesuada odio venenatis.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Tab 3 Content</h2>
+                                        <p>Suspendisse blandit velit Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
+                                    </div>
+                                </div><!-- /.resp-tabs-container -->
+                            </div><!-- /#tab-horizontal -->
+                            
+                            <h3>Vertical Tabs</h3>
+                            
+                            <div id="tab-vertical">
+                                <ul class="resp-tabs-list">
+                                    <li>Tab 1</li>
+                                    <li>Tab 2</li>
+                                    <li>Tab 3</li>
+                                    <li>Tab 4 with More Text for Wrapping Demo</li>
+                                </ul>
+                                <div class="resp-tabs-container">
+                                    <div>
+                                        <h2>Tab 1 Content</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Tab 2 Content</h2>
+                                        <p>Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravid urna gravid eget erat suscipit in malesuada odio venenatis.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Tab 3 Content</h2>
+                                        <p>Suspendisse blandit velit Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Tab 4</h2>
+                                        <p>Ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.Suspendisse blandit velit eget erat suscipit in malesuada odio venenatis.</p>
+                                    </div>
+                                </div><!-- /.resp-tabs-container -->
+                            </div><!-- /#tab-vertical -->
                             
                             <hr>
                             
@@ -349,6 +408,7 @@
 <script src="assets/js/jquery.fancybox-media.js"></script>
 <script src="assets/js/jquery.flexslider-min.js"></script>
 <script src="assets/js/jquery.fitvids.js"></script>
+<script src="assets/js/easyResponsiveTabs.js"></script>
 
 <!-- Global JavaScript Functions -->
 <script src="assets/js/global.js"></script>
@@ -356,10 +416,9 @@
 <!-- Page-specific JavaScript Functions (rename as needed) -->
 <script src="assets/js/section-page.js"></script>
 
-<!-- Flexslider Content Carousel -->
 <script>
 $(document).ready(function() {
-    // Flexslider responsive carousel
+    // Flexslider responsive carousel - http://flexslider.woothemes.com/
     if ($(".flexslider").length > 0) {
         $(".flexslider").flexslider({
             animation: 'slide',
@@ -370,6 +429,29 @@ $(document).ready(function() {
             move: 1
         });
     }
+
+    // Easy Responsive Tabs - http://webtrendset.com/demo/easy-responsive-tabs/
+    $('#tab-horizontal').easyResponsiveTabs({
+        type: 'default', // Types: default, vertical, accordion           
+        width: 'auto', // auto or any width like 600px
+        fit: true,   // 100% fit in a container
+        closed: 'accordion', // Start closed if in accordion view
+        activate: function(event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#tabInfo');
+            var $name = $('span', $info);
+
+            $name.text($tab.text());
+
+            $info.show();
+        }
+    });
+
+    $('#tab-vertical').easyResponsiveTabs({
+        type: 'vertical',
+        width: 'auto',
+        fit: true
+    });
 });
 </script>
 

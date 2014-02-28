@@ -235,7 +235,7 @@ h5,
 h6 {
   color: #111;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
 }
 h1 a,
@@ -453,7 +453,7 @@ input[type=submit] {
   font-weight: normal;
   font-size: 0.9375em;
   color: #5e5e5e;
-  padding-top: 0.5em;
+  padding: 0.5em 0;
 }
 @media screen and (min-width: 43.75em) {
   .pagination .info {

@@ -5,6 +5,59 @@
 
 --------------------------------- */
 
+// Creating a Mobile-First Responsive Web Design - http://www.html5rocks.com/en/mobile/responsivedesign/
+(function(w){
+
+	var sw = document.body.clientWidth,
+		sh = document.body.clientHeight,
+		breakpoint = 700,
+		speed = 800,
+		mobile = true;
+		
+	$(document).ready(function() {
+		checkMobile();
+		setNav();
+	});
+		
+	$(w).resize(function(){ // Update dimensions on resize
+		sw = document.body.clientWidth;
+		sh = document.body.clientHeight;
+		checkMobile();
+	});
+	
+	// Check if Mobile
+	function checkMobile() {
+		mobile = (sw > breakpoint) ? false : true;
+		if (!mobile) { // If Not Mobile
+			$('.nav-primary').show(); // Show full navigation
+		} else { // Hide 
+			if (!$('#nav-primary-link').hasClass('active')) {
+				$('.nav-primary').hide();
+			}
+		}
+	}
+	
+	// Toggle navigation for small screens
+	function setNav() {
+		$('#nav-primary-link').click(function(e){
+			e.preventDefault();
+			var $this = $(this),
+				thisHref = $this.attr('href');
+			$('.nav-primary').slideUp('fast');
+			if($this.hasClass('active')) {
+				$this.removeClass('active');
+				$(thisHref).slideUp('fast');
+			} else {
+				$('.nav-primary-link').removeClass('active');
+				$this.addClass('active');
+				$(thisHref).slideDown('fast');
+			}
+		});
+	}
+  
+})(this);
+
+
 $(document).ready(function () {
     
     // collapsible content

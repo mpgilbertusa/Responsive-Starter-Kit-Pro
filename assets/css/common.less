@@ -115,7 +115,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
     color: #111;
     font-weight: @font-weight-semibold;
-    line-height: 1;
+    line-height: @line-height-headings;
     text-rendering: optimizeLegibility;
     
     a {
@@ -353,7 +353,7 @@ input[type=submit] {
         font-weight: normal;
         font-size: (15em/16em);
         color: #5e5e5e;
-        padding-top: 0.5em;
+        padding: 0.5em 0;
         
         @media screen and (min-width: @break-m) {
             float: left;
