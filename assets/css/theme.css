@@ -69,9 +69,13 @@ textarea,
   font-size: 0.875em;
   padding: 10px 0 0;
   position: relative;
+  /* Retina Version of Nav Icon */
+
 }
 .site-header .site-branding {
   float: left;
+  /* Retina Version of Logo */
+
 }
 .site-header .site-branding a {
   background: url("../img/logo-1x.gif") no-repeat 0 0;
@@ -117,6 +121,8 @@ textarea,
   background-color: transparent;
   text-align: center;
   margin: 10px 0 0;
+  /* Retina Version of Nav List Icons */
+
 }
 .nav-primary ul {
   margin: 0 -10px;
