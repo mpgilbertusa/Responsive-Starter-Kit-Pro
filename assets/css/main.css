@@ -426,15 +426,29 @@ input[type=submit] {
 }
 /* Collapsible Content
 -------------------------------- */
+.show-hide {
+  /* Retina Version of Toggle Icon */
+
+}
 .show-hide .toggle {
-  background: url(../img/ico/ico-toggle-down.png) no-repeat right center;
+  background: url(../img/ico/ico-toggle-down-1x.png) no-repeat right center;
   border-bottom: 1px solid #bbb;
   margin-bottom: 1.5em;
   padding-bottom: 5px;
   cursor: pointer;
 }
 .show-hide .toggle.active {
-  background: url(../img/ico/ico-toggle-up.png) no-repeat right center;
+  background: url(../img/ico/ico-toggle-up-1x.png) no-repeat right center;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .show-hide .toggle {
+    background: url(../img/ico/ico-toggle-down-2x.png) no-repeat right center;
+    background-size: 18px 11px;
+  }
+  .show-hide .toggle.active {
+    background: url(../img/ico/ico-toggle-up-2x.png) no-repeat right center;
+    background-size: 18px 11px;
+  }
 }
 .show-hide .close-section {
   display: block;
