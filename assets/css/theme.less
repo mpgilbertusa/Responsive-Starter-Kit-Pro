@@ -58,7 +58,7 @@ label, legend, input, select, textarea, .info-error,
     #nav-primary-link {
         float: right;
         margin-top: 18px;
-        background: url('../img/ico/nav-icons.png') no-repeat -4px -6px;
+        background: url('../img/ico/nav-icons-1x.png') no-repeat -4px -6px;
         width: 22px;
         height: 16px;
         text-indent: -999em;
@@ -66,6 +66,16 @@ label, legend, input, select, textarea, .info-error,
 
         @media all and (min-width: @break-m) {
             display: none;
+        }
+    }
+    
+    @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        #nav-primary-link {
+            background: url('../img/ico/nav-icons-2x.png') no-repeat -4px -6px;
+            background-size: 30px 98px;
         }
     }
 }
@@ -91,13 +101,13 @@ label, legend, input, select, textarea, .info-error,
     li {
         margin-left: 0;
         border: 0;
-        background: transparent url('../img/ico/nav-icons.png') no-repeat right -31px;
+        background: transparent url('../img/ico/nav-icons-1x.png') no-repeat right -31px;
         display: block;
         border-top: 1px solid #aaa;
         text-align: left;
-
+        
         &.current a {
-            background: #777url('../img/ico/nav-icons.png') no-repeat right -61px;
+            background: #777 url('../img/ico/nav-icons-1x.png') no-repeat right -61px;
             color: #fff;
         }
 
@@ -108,6 +118,21 @@ label, legend, input, select, textarea, .info-error,
                 background-image: none;
                 background-color: #777;
                 color: #fff;
+            }
+        }
+    }
+    
+    @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        li {
+            background: url('../img/ico/nav-icons-2x.png') no-repeat right -30px;
+            background-size: 30px 98px;
+        
+            &.current a {
+                background: #777 url('../img/ico/nav-icons-2x.png') no-repeat right -61px;
+                background-size: 30px 98px;
             }
         }
     }
