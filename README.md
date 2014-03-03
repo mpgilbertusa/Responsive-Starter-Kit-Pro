@@ -43,6 +43,7 @@ Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit
 
 ## Add-ons ##
 
+* Google Web Fonts (Gentium Book Basic for body copy, Open Sans for headings)- http://www.google.com/fonts
 * Zurb Responsive Tables (data tables) - https://github.com/zurb/responsive-tables
 * picturefill (responsive images, including Retina support) - https://github.com/scottjehl/picturefill
 * FitVids (videos) - https://github.com/davatron5000/FitVids.js
