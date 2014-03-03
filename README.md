@@ -33,7 +33,6 @@ Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit
 * Column widths use %, fixed-width gutters use px, fonts use em, images use "max-width: 100%" and "height: auto"
 * *Box-sizing: Border-box* for everything - http://paulirish.com/2012/box-sizing-border-box-ftw/
 * Uses unitless line-heights for typography - http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
-* .gitignore file excludes all CSS files (only versioning LESS files to avoid compile conflicts caused by pre-processor)
 
 ## JavaScript ##
 
