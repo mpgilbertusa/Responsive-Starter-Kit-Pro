@@ -43,14 +43,12 @@ Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit
 
 ## Add-ons ##
 
-* Modernizr for feature detection - http://modernizr.com/
-* Zurb Responsive Tables (for data tables) - https://github.com/zurb/responsive-tables
-* jQuery Validate for client-side validation on forms - http://bassistance.de/jquery-plugins/jquery-plugin-validation/
-* picturefill (for responsive images, including Retina support) - https://github.com/scottjehl/picturefill
+* Zurb Responsive Tables (data tables) - https://github.com/zurb/responsive-tables
+* picturefill (responsive images, including Retina support) - https://github.com/scottjehl/picturefill
 * FitVids (videos) - https://github.com/davatron5000/FitVids.js
 * fancyBox (modal dialogs) - https://github.com/fancyapps/fancyBox
 * WooThemes FlexSlider (content carousel) - https://github.com/woothemes/FlexSlider
-* Modernizr (feature detection) - https://github.com/Modernizr/Modernizr
+* Easy Responsive Tabs to Accordion (tab navigation) - http://webtrendset.com/demo/easy-responsive-tabs/Index.html
 
 ## IE 8 ##
 
