@@ -100,20 +100,19 @@ label, legend, input, select, textarea, .info-error,
 
 .nav-primary {
     clear: both;
+    background-color: #ddd;
     font-weight: @font-weight-bold;
-    background-color: transparent;
     text-align: center;
-    margin: 10px 0 0;
+    margin: 0 -10px;
     
     ul {
-        margin: 0 -10px;
         border-bottom: 1px solid #aaa;
     }
     
     li {
         margin-left: 0;
         border: 0;
-        background: transparent url('../img/ico/nav-icons-1x.png') no-repeat right -31px;
+        background: url('../img/ico/nav-icons-1x.png') no-repeat right -31px;
         display: block;
         border-top: 1px solid #aaa;
         text-align: left;
@@ -159,12 +158,13 @@ label, legend, input, select, textarea, .info-error,
         border: 0;
 
         &:hover, &:focus {
-            background-color: #bbb;
-            color: #222;
+            color: #000;
         }
     }
 
     @media all and (min-width: @break-m) {
+        background-color: transparent;
+        margin: 10px 0;
         clear: none;
         float: right;
         
@@ -180,6 +180,11 @@ label, legend, input, select, textarea, .info-error,
         
         a {
             padding: 7px;
+
+            &:hover, &:focus {
+                background-color: #fff;
+                color: #222;
+            }
         }
     }
 }
