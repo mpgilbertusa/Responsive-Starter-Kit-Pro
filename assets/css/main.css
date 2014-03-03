@@ -173,10 +173,12 @@ a:focus {
 }
 a:focus {
   outline: thin dotted;
+  /* outline focused elements for accessibility */
+
 }
 a:hover,
 a:active {
-  outline: thin dotted;
+  outline: none;
 }
 input[type=checkbox] {
   border: 0px !important;
