@@ -318,42 +318,65 @@
                             
                             <h3>Full Width Selection {h3}</h3>
                             
-                            <p>This list allows the user to select the full width of the item.</p>
+                            <p>This list allows the user to select the full width of the item. Items can be dragged from one list into the other. They can also be indented by dragging slightly to the right. Lists can be expanded/collapsed by selecting the minus/plus.</p>
                             
-                            <div class="group">
-                            
-                                <div class="dd" id="nestable-1">
-                                    <ol class="dd-list">
-                                        <li class="dd-item" data-id="1">
-                                            <div class="dd-handle">Item 1</div>
-                                        </li>
-                                        <li class="dd-item" data-id="2">
-                                            <div class="dd-handle">Item 2</div>
-                                        </li>
-                                        <li class="dd-item" data-id="3">
-                                            <div class="dd-handle">Item 3</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="4">
-                                                    <div class="dd-handle">Item 4</div>
-                                                </li>
-                                                <li class="dd-item" data-id="5">
-                                                    <div class="dd-handle">Item 5</div>
-                                                </li>
-                                                <li class="dd-item" data-id="6">
-                                                    <div class="dd-handle">Item 6</div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class="dd-item" data-id="7">
-                                            <div class="dd-handle">Item 7</div>
-                                        </li>
-                                    </ol>
-                                </div><!-- /#nestable-1 -->
+                            <div class="grid">
                                 
-                            </div><!-- /.group -->
+                                <div class="one-half">
                             
-                            <div>Serialized Output:</div>
+                                    <div class="dd" id="nestable-1">
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="1">
+                                                <div class="dd-handle">Item 1</div>
+                                            </li>
+                                            <li class="dd-item" data-id="2">
+                                                <div class="dd-handle">Item 2</div>
+                                            </li>
+                                            <li class="dd-item" data-id="3">
+                                                <div class="dd-handle">Item 3</div>
+                                            </li>
+                                            <li class="dd-item" data-id="4">
+                                                <div class="dd-handle">Item 4</div>
+                                            </li>
+                                            <li class="dd-item" data-id="5">
+                                                <div class="dd-handle">Item 5</div>
+                                            </li>
+                                        </ol>
+                                    </div><!-- /#nestable-1 -->
+                                    
+                                </div><!-- /.one-half -->
+                                
+                                <div class="one-half">
+                            
+                                    <div class="dd" id="nestable-2">
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="6">
+                                                <div class="dd-handle">Item 6</div>
+                                            </li>
+                                            <li class="dd-item" data-id="7">
+                                                <div class="dd-handle">Item 7</div>
+                                            </li>
+                                            <li class="dd-item" data-id="8">
+                                                <div class="dd-handle">Item 8</div>
+                                            </li>
+                                            <li class="dd-item" data-id="9">
+                                                <div class="dd-handle">Item 9</div>
+                                            </li>
+                                            <li class="dd-item" data-id="10">
+                                                <div class="dd-handle">Item 10</div>
+                                            </li>
+                                        </ol>
+                                    </div><!-- /#nestable-2 -->
+                                    
+                                </div><!-- /.one-half -->
+                                
+                            </div><!-- /.grid -->
+                            
+                            <div>Serialized Output (left):</div>
                             <textarea class="nestable-output" id="nestable-1-output"></textarea>
+                            
+                            <div>Serialized Output (right):</div>
+                            <textarea class="nestable-output" id="nestable-2-output"></textarea>
                             
                             <h3>Draggable Handles {h3}</h3>
                             
@@ -361,7 +384,7 @@
                             
                             <div class="group">
                                 
-                                <div class="dd" id="nestable-2">
+                                <div class="dd" id="nestable-3">
                                     <ol class="dd-list">
                                         <li class="dd-item dd3-item" data-id="1">
                                             <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 1</div>
@@ -377,22 +400,30 @@
                                                 </li>
                                                 <li class="dd-item dd3-item" data-id="5">
                                                     <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 5</div>
+                                                        <ol class="dd-list">
+                                                            <li class="dd-item dd3-item" data-id="6">
+                                                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 6</div>
+                                                            </li>
+                                                            <li class="dd-item dd3-item" data-id="7">
+                                                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 7</div>
+                                                            </li>
+                                                            <li class="dd-item dd3-item" data-id="8">
+                                                                <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 8</div>
+                                                            </li>
+                                                        </ol>
                                                 </li>
-                                                <li class="dd-item dd3-item" data-id="6">
-                                                    <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 6</div>
+                                                <li class="dd-item dd3-item" data-id="9">
+                                                    <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 9</div>
                                                 </li>
                                             </ol>
                                         </li>
-                                        <li class="dd-item dd3-item" data-id="7">
-                                            <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 7</div>
+                                        <li class="dd-item dd3-item" data-id="10">
+                                            <div class="dd-handle dd3-handle">Drag</div><div class="dd3-content">Item 10</div>
                                         </li>
                                     </ol>
-                                </div><!-- /#nestable-2 -->
+                                </div><!-- /#nestable-3 -->
                                 
                             </div><!-- /.group -->
-                            
-                            <div>Serialized Output:</div>
-                            <textarea class="nestable-output" id="nestable-2-output"></textarea>
                             
                             <hr>
                             
@@ -541,16 +572,23 @@ $(document).ready(function() {
     };
 
     // activate Nestable for list 1
-    $('#nestable-1').nestable()
+    $('#nestable-1').nestable({
+        group: 1
+    })
     .on('change', updateOutput);
 
     // activate Nestable for list 2
-    $('#nestable-2').nestable()
+    $('#nestable-2').nestable({
+        group: 1
+    })
     .on('change', updateOutput);
 
     // output initial serialised data
     updateOutput($('#nestable-1').data('output', $('#nestable-1-output')));
     updateOutput($('#nestable-2').data('output', $('#nestable-2-output')));
+
+    // activate Nestable for list 3
+    $('#nestable-3').nestable();
 });
 </script>
 
