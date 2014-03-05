@@ -39,7 +39,7 @@ body {
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1070px;
+    max-width: (@site-max-width + 20px);
     position: relative;
 }
 
@@ -504,61 +504,65 @@ input[type=submit] {
 /* Simple Grids
 -------------------------------- */
 
+/* Note: Set the @gutter var in mixins.less to set space between columns. */
+
+@one-half: ((100% - (@gutter)) / 2);
+@one-third: ((100% - (@gutter*2)) / 3);
+@one-fourth: ((100% - (@gutter*3)) / 4);
+@one-fifth: ((100% - (@gutter*4)) / 5);
+@one-sixth: ((100% - (@gutter*5)) / 6);
+
 @media all and (min-width: @break-m) {
     
     .grid .one-half, .grid .one-third, .grid .two-thirds, .grid .one-fourth, .grid .three-fourths,
     .grid .one-fifth, .grid .two-fifths, .grid .three-fifths, .grid .four-fifths,
     .grid .one-sixth, .grid .five-sixths {
         float: left;
-        margin-left: 3%;
+        margin-left: @gutter;
     }
     
     .grid .one-half {
-        width: 48%;
-    }
-    
-    .grid ul.one-half {
-        width: 46%;
+        width: @one-half;
     }
     
     .grid .one-third {
-        width: 31%;
+        width: @one-third;
     }
     
     .grid .two-thirds {
-        width: 63%;
+        width: @one-third * 2;
     }
     
     .grid .one-fourth {
-        width: 22%;
+        width: @one-fourth;
     }
     
     .grid .three-fourths {
-        width: 69%;
+        width: @one-fourth * 3;
     }
     
     .grid .one-fifth {
-        width: 17%;
+        width: @one-fifth;
     }
     
     .grid .two-fifths {
-        width: 36%;
+        width: @one-fifth * 2;
     }
     
     .grid .three-fifths {
-        width: 54%;
+        width: @one-fifth * 3;
     }
     
     .grid .four-fifths {
-        width: 73%;
+        width: @one-fifth * 4;
     }
     
     .grid .one-sixth {
-        width: 14%;
+        width: @one-sixth;
     }
     
     .grid .five-sixths {
-        width: 74%;
+        width: @one-sixth * 5;
     }
     
     .grid div:first-child {

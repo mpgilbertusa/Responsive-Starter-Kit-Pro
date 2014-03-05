@@ -156,7 +156,7 @@ body {
 .wrapper {
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 1070px;
+  max-width: 1170px;
   position: relative;
 }
 a {
@@ -593,6 +593,7 @@ input[type=submit] {
 }
 /* Simple Grids
 -------------------------------- */
+/* Note: Set the @gutter var in mixins.less to set space between columns. */
 @media all and (min-width: 43.75em) {
   .grid .one-half,
   .grid .one-third,
@@ -606,43 +607,40 @@ input[type=submit] {
   .grid .one-sixth,
   .grid .five-sixths {
     float: left;
-    margin-left: 3%;
+    margin-left: 1.7391304347826086%;
   }
   .grid .one-half {
-    width: 48%;
-  }
-  .grid ul.one-half {
-    width: 46%;
+    width: 49.130434782608695%;
   }
   .grid .one-third {
-    width: 31%;
+    width: 32.17391304347826%;
   }
   .grid .two-thirds {
-    width: 63%;
+    width: 64.34782608695652%;
   }
   .grid .one-fourth {
-    width: 22%;
+    width: 23.695652173913043%;
   }
   .grid .three-fourths {
-    width: 69%;
+    width: 71.08695652173913%;
   }
   .grid .one-fifth {
-    width: 17%;
+    width: 18.608695652173914%;
   }
   .grid .two-fifths {
-    width: 36%;
+    width: 37.21739130434783%;
   }
   .grid .three-fifths {
-    width: 54%;
+    width: 55.82608695652174%;
   }
   .grid .four-fifths {
-    width: 73%;
+    width: 74.43478260869566%;
   }
   .grid .one-sixth {
-    width: 14%;
+    width: 15.217391304347826%;
   }
   .grid .five-sixths {
-    width: 74%;
+    width: 76.08695652173913%;
   }
   .grid div:first-child {
     margin-left: 0 !important;
