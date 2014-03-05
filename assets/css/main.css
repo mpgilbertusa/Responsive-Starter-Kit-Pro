@@ -1,7 +1,7 @@
 /* -----------------------------
 
    Responsive Starter Kit Pro
-   Main (main.css)
+   Main Style Sheet
 
 -------------------------------- */
 /* -----------------------------
@@ -103,7 +103,7 @@ mark {
    Credit
    -----------------
    Sections of this document
-   are compliments of:
+   were inspired by:
     + LESS Elements
     + Preboot
 
@@ -407,7 +407,11 @@ table tr:nth-child(even) td {
   width: 0;
   height: 0;
 }
-/* Alerts
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Alerts Style Sheet
+
 -------------------------------- */
 .alert {
   background-color: #f2f2f2;
@@ -464,7 +468,11 @@ table tr:nth-child(even) td {
 .alert-danger a:focus {
   color: #4d1e1e;
 }
-/* Buttons
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Buttons Style Sheet
+
 -------------------------------- */
 .btn {
   position: relative;
@@ -495,7 +503,11 @@ input[type=submit] {
   padding: 11px 20px;
   text-decoration: none;
 }
-/* Collapsible Content (show-hide)
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Show-Hide Style Sheet
+
 -------------------------------- */
 .show-hide {
   /* Retina Version of Toggle Icon */
@@ -527,7 +539,11 @@ input[type=submit] {
   text-align: right;
   margin-bottom: 1.5em;
 }
-/* Pagination
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Pagination Style Sheet
+
 -------------------------------- */
 .pagination {
   text-align: center;
@@ -588,7 +604,11 @@ input[type=submit] {
 .pagination li:nth-child(1) {
   margin-left: 0;
 }
-/* Simple Grids
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Simple Grids Style Sheet
+
 -------------------------------- */
 /* Note: Set the @gutter var in mixins.less to set space between columns. */
 @media all and (min-width: 43.75em) {
