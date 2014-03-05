@@ -131,10 +131,7 @@ mark {
    Table of Contents:
    -----------------------------
    + Basics
-   + Colored Buttons
-   + Collapsible Content
    + Non-semantic Helpers
-   + Simple Grids
 
 -------------------------------- */
 /* Basics
@@ -338,6 +335,78 @@ table tr:nth-child(even) td {
   font-size: 0.875em;
   margin: 0.5em 0;
 }
+/* Non-semantic Helpers
+-------------------------------- */
+.uppercase {
+  text-transform: uppercase;
+}
+.reg {
+  position: relative;
+  top: -4px;
+  font-size: 0.7em;
+}
+.img-left {
+  float: left;
+  height: auto;
+  margin: 5px 20px 20px 0;
+}
+.img-right {
+  float: right;
+  height: auto;
+  margin: 5px 0 20px 20px;
+}
+.sidebar .img-left {
+  margin: 2px 10px 5px 0;
+}
+.sidebar .img-right {
+  margin: 2px 0 5px 10px;
+}
+.indent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.outdent {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.clear {
+  clear: both;
+}
+/*
+   Micro Clearfix
+   http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearfix:after,
+.cf:after,
+.grid:after,
+.box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* accessibility, print, image replacement */
+.visually-hidden,
+.screen-reader-text,
+.wai,
+.ir {
+  position: absolute;
+  left: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  width: 0;
+  height: 0;
+}
 /* Alerts
 -------------------------------- */
 .alert {
@@ -426,7 +495,7 @@ input[type=submit] {
   padding: 11px 20px;
   text-decoration: none;
 }
-/* Collapsible Content
+/* Collapsible Content (show-hide)
 -------------------------------- */
 .show-hide {
   /* Retina Version of Toggle Icon */
@@ -518,78 +587,6 @@ input[type=submit] {
 }
 .pagination li:nth-child(1) {
   margin-left: 0;
-}
-/* Non-semantic Helpers
--------------------------------- */
-.uppercase {
-  text-transform: uppercase;
-}
-.reg {
-  position: relative;
-  top: -4px;
-  font-size: 0.7em;
-}
-.img-left {
-  float: left;
-  height: auto;
-  margin: 5px 20px 20px 0;
-}
-.img-right {
-  float: right;
-  height: auto;
-  margin: 5px 0 20px 20px;
-}
-.sidebar .img-left {
-  margin: 2px 10px 5px 0;
-}
-.sidebar .img-right {
-  margin: 2px 0 5px 10px;
-}
-.indent {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.outdent {
-  margin-left: auto;
-  margin-right: auto;
-}
-.center {
-  text-align: center;
-}
-.right {
-  text-align: right;
-}
-.left {
-  text-align: left;
-}
-.clear {
-  clear: both;
-}
-/*
-   Micro Clearfix
-   http://nicolasgallagher.com/micro-clearfix-hack/
-*/
-.clearfix:after,
-.cf:after,
-.grid:after,
-.box:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* accessibility, print, image replacement */
-.visually-hidden,
-.screen-reader-text,
-.wai,
-.ir {
-  position: absolute;
-  left: -999em;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  text-align: left;
-  direction: ltr;
-  width: 0;
-  height: 0;
 }
 /* Simple Grids
 -------------------------------- */
