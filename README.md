@@ -10,7 +10,7 @@ If you'd like to take a look at something a bit more basic, you might enjoy the 
 
 Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro/">sample layout pages</a> to see how everything works.
 
-## Information ##
+## What's Included ##
 
 ### General ###
 
