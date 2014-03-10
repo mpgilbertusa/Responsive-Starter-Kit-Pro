@@ -1,0 +1,394 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="description" content="xyz">
+    <meta name="keywords" content="xyz, xyz, xyz">
+
+    <title>Getting Started with Responsive Starter Kit Pro</title>
+
+    <!-- Resist the urge to include 'user-scalable=no' below. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common Style Sheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Layout Style Sheet -->
+    <link rel="stylesheet" href="assets/css/layout-sidebar-right.css">
+
+    <!-- Theme Style Sheet (rename as needed) -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    
+    <style>
+    @media screen and (min-width: 43.75em) {
+        .sidebar {
+            position: fixed;
+            top: 2em;
+            right: 2em;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        .sidebar ul ul {
+            margin-top: 0.5em;
+            margin-left: 1.5em;
+            list-style: disc;
+        }
+        
+        .sidebar ul ul li {
+            font-weight: normal;
+            margin-bottom: 0.15em;
+        }
+    }
+    </style>
+    
+    <!-- Prism Syntax Highlighter Style Sheet -->
+    <link href="assets/prism/prism.css" rel="stylesheet">
+    
+    <!-- Font Style Sheet -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Open+Sans:400,600,700">
+
+    <!-- Use v1.9.1 if IE 6-8 support is needed. -->
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+
+    <!-- Note: Respond.js doesn't work if you open the file directly with file:// -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/selectivizr-min.js"></script>
+    <![endif]-->
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5.js"></script>
+	<![endif]-->
+
+    <link rel="apple-touch-icon" href="assets/img/ico/apple-icon-touch.png">
+    <link rel="icon" href="assets/img/ico/favicon.png">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+    <![endif]-->
+    <meta name="msapplication-TileColor" content="#585858">
+    <meta name="msapplication-TileImage" content="assets/img/ico/win8-tile-icon.png">
+</head>
+
+<body>
+
+<div class="site-container">
+
+    <div class="site-content" id="back-to-top-anchor">
+
+        <div class="wrapper">
+
+            <div class="page-content clearfix">
+
+                <main role="main">
+
+                    <article role="article">
+
+                        <header class="article-header">
+
+                            <h1 class="page-title">Getting Started</h1>
+                        
+                        </header>
+                        
+                        <hr>
+
+                        <section>
+                            
+                            <p class="intro">This guide will help you get started with the <strong>Responsive Starter Kit Pro</strong>. It covers how to download the kit, the overall directory/file structure, and a brief overview of the layout of a basic page. It also includes code samples to help you include some helpful add-ons.</p>
+                                
+                            <hr>
+                            
+                            <h2 id="download">Download</h2>
+                            
+                            <p>The source code for the starter kit is available in a <strong>GitHub repository</strong>. You can begin by heading over there and cloning or forking the repository directly. Or if you'd prefer, you can <strong>download a ZIP</strong> archive of the starter kit if you'd prefer to get a snapshot of the code without worrying about future updates. Use one of the following links to get started.</p>
+                            
+                            <p>
+                                <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro" class="btn btn-gray">View GitHub Project &rsaquo;</a>
+                                <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro/archive/master.zip" class="btn btn-gray">Download a ZIP &rsaquo;</a>
+                            </p>
+                            
+                            <hr>
+                            
+                            <h2 id="whats-included">What's Included</h2>
+                            
+                            <p>The starter kit was built with a basic toolkit requiring minimal setup. The HTML files can be viewed directly in your browser, but if you'd like to test in IE 8, you'll need to view them from a local web server such as MAMP, WAMP, simple Apache, or similar.</p>
+                            
+                            <p>The CSS was written with the LESS CSS pre-processor, so you'll also need a compiler such as <a href="http://incident57.com/less/" target="_blank">Less.app</a> or <a href="https://incident57.com/codekit/" target="_blank">CodeKit</a> for Mac OS X or <a href="http://wearekiss.com/simpless" target="_blank">SimpLESS</a> or <a href="http://winless.org/" target="_blank">WinLess</a> for Windows. Although you can hack away at the compiled CSS directly, you'll really be missing out on the benefits of a CSS pre-processor, so it's not recommended to head down that path. In fact, you should always edit the LESS files instead of the CSS files. Editing the CSS files directly and then editing the LESS file later will cause you to lose any changes you'd previously made directly to the CSS file. There are a few CSS files that are included with jQuery plugins. Those are fair game to be edited directly.</p>
+                            
+                            <div class="alert alert-info"><strong>Note:</strong> If you're not already familiar with CSS pre-processors, head over to the <a href="http://lesscss.org/" target="_blank">LESS website</a> to see what all the fuss is about. Trust me, it's not a waste of time to use a CSS pre-processor. And there's no time like the present to get started if you haven't already.</div>
+                            
+                            <p>Once you've grabbed the source code and uncompressed it to your hard drive, it should look like this.</p>
+                            
+<pre><code class="language-markup">/
+└── assets/
+    ├── css/
+    ├── img/
+    │   ├── fancybox
+    │   ├── flexslider
+    │   └── ico
+    └── js/</code></pre>
+                            
+                            <p>There are a handful of files in the <em>base</em> directory of the project.</p>
+                            
+                            <ul>
+                                <li><strong>README.md</strong> &ndash; This is a GitHub document with general information about the starter kit.</li>
+                                <li><strong>index.html</strong> &ndash; This is the introductory page for the project. It includes links to sample page layouts, etc.</li>
+                                <li><strong>layout*.html</strong> &ndash; There's a variety of sample layout pages which will demonstrate typical page layouts, including sidebars on the left/right, two sidebars, full width, and more. These can be used as a good starting point for your project. Adjust as needed.</li>
+                                <li><strong>add-ons.html</strong> &ndash; The Add-ons page contains an assortment of useful responsive components that can be added for additional functionality, such as content carousels, tabbed navigation, responsive data tables, etc.</li>
+                            </ul>
+                            
+                            <p>All of the <strong>style sheets</strong> are included in the <em>assets/css</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/css</strong> &ndash; The <em>css</em> directory contains all of the .less files as well as the compiled .css files.</li>
+                            </ul>
+                                
+                            <p><strong>Images</strong> are included in the <em>assets/img</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/img</strong> &ndash; Image files can be placed here. Create additional sub-directories as needed. There are a few placeholder images which can be deleted.</li>
+                                <li><strong>/assets/img/fancybox</strong> &ndash; Images used by the Fancybox modal plugin.</li>
+                                <li><strong>/assets/img/flexslider</strong> &ndash; Images used by the Flexslider content carousel (slider) plugin.</li>
+                                <li><strong>/assets/img/ico</strong> &ndash; General purpose placeholder icons.</li>
+                            </ul>
+                            
+                            <p>And finally, <strong>JavaScript</strong> files are contained in the <em>assets/js</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/js</strong> &ndash; JavaScript files, including sample global and section/page files are included here. You'll also find a small handful of jQuery plugin files.</li>
+                            </ul>
+                            
+                            <hr>
+                            
+                            <h2 id="basic-structure">Basic Structure of a Page</h2>
+                            
+                            <p>There's an empty layout page (layout-empty.html) which contains the most basic elements to start a page. Duplicate this file and open it in your text editor. Here's a simplified version of that page to illustrate its basic structure.</p>
+                            
+<pre><code class="language-markup">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="assets/css/main.css"&gt;
+    &lt;link rel="stylesheet" href="assets/css/layout-sidebar-left.css"&gt;
+    &lt;link rel="stylesheet" href="assets/css/theme.css"&gt;
+    &lt;!-- Additional items go here, such as meta tags, scripts, web fonts, and icons. --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="site-container"&gt;
+
+    &lt;header role="banner" class="site-header"&gt;
+        &lt;!-- Header content goes here, such as site branding and primary nav. --&gt;
+    &lt;/header&gt;&lt;!-- /.site-header --&gt;
+
+    &lt;div class="site-content"&gt;
+        &lt;div class="page-content"&gt;
+            &lt;!-- Page-specific content goes here, such as a breadcrumb trail. --&gt;
+
+            &lt;main role="main"&gt;
+                 &lt;h1&gt;Page Title&lt;/h1&gt;
+                &lt;!-- Main content goes here. --&gt;
+            &lt;/main&gt;
+
+            &lt;aside role="complementary" class="sidebar"&gt;
+                &lt;!-- Sidebar content goes here. --&gt;
+            &lt;/aside&gt;&lt;!-- /.sidebar --&gt;
+
+        &lt;/div&gt;&lt;!-- /.page-content --&gt;
+    &lt;/div&gt;&lt;!-- /.site-content --&gt;
+
+    &lt;footer role="contentinfo" class="site-footer"&gt;
+        &lt;!-- Footer content goes here. --&gt;
+    &lt;/footer&gt;&lt;!-- /.site-footer --&gt;
+
+&lt;/div&gt;&lt;!-- /.site-container --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                            <p>There are additional items in the base template, but this should give you and idea of the overall structure of a typical page. Move things around if you'd like. Take a look at all the sample layout pages and see which one is the best starting point for your project. Make adjustments, additions, and subtractions to the overall structure. Make it your own.</p>
+                            
+                            <div class="alert alert-info"><strong>Remember:</strong> All of this structure is editable to match your project's design. This is just a starting point.</div>
+                            
+                            <hr>
+                            
+                            <h2 id="code-samples">Code Samples</h2>
+                            
+                            <p>The <a href="add-ons.html" target="_blank">Add-ons page</a> contains a handful of useful items that can be added to a page to provide some additional interactivity, such as content carousels, tabbed navigation, and much more. The following code samples (snippets) will help you get started building these add-ons into your pages.</p>
+                            
+                            <h3 id="code-modals">Modal Dialogs</h3>
+                            
+                            <p>Place in the <strong>head</strong> of your document:</p>
+                            
+<pre><code class="language-markup">&lt;link rel="stylesheet" href="assets/css/jquery.fancybox.css"&gt;</code></pre>
+                            
+                            <p>Place in the <strong>foot</strong> of your document:</p>
+                            
+<pre><code class="language-markup">&lt;script src="assets/js/jquery.fancybox.pack.js"&gt;</script>
+&lt;script src="assets/js/jquery.fancybox-media.js"&gt;&lt;/script&gt;</code></pre>
+                            
+                            <p>Place in the <strong>global.js</strong> your document:</p>
+                            
+<pre><code class="language-javascript">$(document).ready(function () {
+    // modal for general content (fancyBox)
+    if ($(".fancybox").length > 0) {
+        $(".fancybox").fancybox({
+            maxWidth: 800,
+            maxHeight: 600
+        });
+    }
+
+    // modal for video player (fancyBox)
+    if ($('.fancybox-media').length > 0) {
+        $('.fancybox-media').fancybox({
+            width: 800,
+            height: 450,
+            padding: 2,
+            openEffect: 'none',
+            closeEffect: 'none',
+            helpers: {
+                media: {}
+            }
+        });
+    }
+});</code></pre>
+
+                            <p>Use this HTML code to add a <strong>inline modal dialog</strong>:</p>
+                            
+<pre><code class="language-markup">&lt;a href="#modal-content" class="fancybox"&gt;modal inline&lt;/a&gt;
+
+&lt;div id="modal-content" style="display: none;"&gt;
+    Content goes here.
+&lt;/div&gt;</code></pre>
+
+                            <p>Use this HTML code to add a <strong>modal image</strong>:</p>
+                            
+<pre><code class="language-markup">&lt;a href="image.jpg" title="Caption Goes Here" class="fancybox"&gt;modal image&lt;/a&gt;</code></pre>
+
+                            <p>Use this HTML code to add a <strong>modal gallery of images</strong>. Notice how the <em>rel</em> attributes are all the same. This is what ties the images together in the modal dialog so that the user can cycle through the full set.</p>
+                            
+<pre><code class="language-markup">&lt;div class="image-gallery outline-pad"&gt;
+    &lt;a class="fancybox" rel="gallery1" href="large-image-1.jpg" title="Caption Text Goes Here">&lt;img src="thumbnail-image-1.jpg" alt=""&gt;&lt;/a&gt;
+    &lt;a class="fancybox" rel="gallery1" href="large-image-2.jpg" title="Caption Text Goes Here">&lt;img src="thumbnail-image-2.jpg" alt=""&gt;&lt;/a&gt;
+    &lt;a class="fancybox" rel="gallery1" href="large-image-3.jpg" title="Caption Text Goes Here">&lt;img src="thumbnail-image-3.jpg" alt=""&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                            <p>Use this HTML code to add a <strong>modal video</strong>. Replace the <em>href</em> attribute with your video's URL.</p>
+                            
+<pre><code class="language-markup">&lt;a href="http://player.vimeo.com/video/50905661" class="fancybox fancybox-media"&gt;modal video&lt;/a&gt;</code></pre>
+                            
+                            
+                            
+                            <hr>
+                            
+                            <h3 id="code-tabs">Tabs</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                            <hr>
+                            
+                            <h3 id="code-sliders">Content Carousels (Sliders)</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                            <hr>
+                            
+                            <h3 id="code-tables">Data Tables</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                            <hr>
+                            
+                            <h3 id="code-videos">Videos</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                            <hr>
+                            
+                            <h3 id="code-collapsible">Collapsible Content</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                            <hr>
+                            
+                            <h3 id="code-drag-drop">Drag-and-Drop Lists</h3>
+                            
+                            <p>xyzzy</p>
+                            
+                        </section>
+
+                    </article>
+                
+                </main>
+                
+                <aside role="complementary" class="sidebar">
+                    
+                    <h3>Table of Contents</h3>
+                    
+                    <ul>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#whats-included">What's Included</a></li>
+                        <li><a href="#basic-structure">Basic Structure of a Page</a></li>
+                        <li><a href="#code-samples">Code Samples</a>
+                            <ul>
+                                <li><a href="#code-modals">Modal Dialogs</a></li>
+                                <li><a href="#code-tabs">Tabs</a></li>
+                                <li><a href="#code-sliders">Content Carousels</a></li>
+                                <li><a href="#code-tables">Data Tables</a></li>
+                                <li><a href="#code-videos">Videos</a></li>
+                                <li><a href="#code-collapsible">Collapsible Content</a></li>
+                                <li><a href="#code-drag-drop">Drag-and-Drop Lists</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <hr>
+    
+                    <h3>Additional Information</h3>
+            
+                    <p>The source files for this starter kit are <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro">hosted on GitHub</a>. Additional technical details can be found there. If you need a bit more help getting started, take a look at the <a href="http://www.mpgilbert.com/responsive-web-design-a-gentle-introduction">video training course</a> that goes with the <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit">basic version</a> of this starter kit.</p>
+                    
+                    <div class="credit-box clearfix">
+                        <img src="http://www.mpgilbert.com/wp-content/uploads/mg-courtyard-circle-sm.png" alt="Michael P. Gilbert">
+                        <div class="body">
+                            <h3>Michael P. Gilbert</h3>
+                            <a href="http://www.mpgilbert.com/">www.mpgilbert.com</a><br>
+                            <a href="http://twitter.com/mpgilbertusa">@mpgilbertusa</a>
+                        </div>
+                    </div>
+
+                </aside><!-- /.sidebar -->
+				
+            </div><!-- /.page-content -->
+        
+        </div><!-- /.wrapper -->
+
+    </div><!-- /.site-content -->
+
+</div><!-- /.site-container -->
+
+<!-- iOS Orientation Change Fix - https://github.com/scottjehl/iOS-Orientationchange-Fix/blob/master/README.md -->
+<script src="assets/js/ios-orientationchange-fix.js"></script>
+
+<!-- Prism Syntax Highlighter - http://prismjs.com/ -->
+<script src="assets/prism/prism.js"></script>
+
+<!-- Global JavaScript Functions -->
+<script src="assets/js/global.js"></script>
+
+<!-- Page-specific JavaScript Functions (rename as needed) -->
+<script src="assets/js/section-page.js"></script>
+
+</body>
+</html>

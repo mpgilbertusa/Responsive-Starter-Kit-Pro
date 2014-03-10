@@ -286,7 +286,7 @@ main .image-gallery img {
     padding: 2px 4px;
   }
 }
-main .credit-box {
+/* Credit box for documentation */.credit-box {
   display: inline-block;
   margin: 0 0 1.5em;
   padding: 5px 15px 5px 5px;
@@ -299,15 +299,15 @@ main .credit-box {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-main .credit-box img {
+.credit-box img {
   float: left;
   margin: 0 7px 0 0;
 }
-main .credit-box .body {
+.credit-box .body {
   float: right;
   margin-top: 20px;
 }
-main .credit-box h3 {
+.credit-box h3 {
   font-size: 1em;
   margin: 0 0 0.25em;
   padding: 0 0 0.3em;
