@@ -61,6 +61,9 @@ textarea,
 .resp-tabs-list li {
   font-family: "Open Sans", sans-serif;
 }
+.gist {
+  margin: 0 0 1.5em;
+}
 /* Header
 -------------------------------- */
 .site-header {
@@ -230,6 +233,36 @@ textarea,
   
   }
 }
+/* Credit box for documentation */
+.credit-box {
+  display: inline-block;
+  margin: 0 0 1.5em;
+  padding: 5px 15px 5px 5px;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.credit-box h3 {
+  font-size: 1em;
+  margin: 0 0 0.25em;
+  padding: 0 0 0.3em;
+  border-bottom: 1px solid #b3b3b3;
+}
+@media screen and (min-width: 56.25em) {
+  .credit-box img {
+    float: left;
+    margin: 0 7px 0 0;
+  }
+  .credit-box .body {
+    float: right;
+    margin-top: 20px;
+  }
+}
 /* Main
 -------------------------------- */
 main {
@@ -285,33 +318,6 @@ main .image-gallery img {
     float: left;
     padding: 2px 4px;
   }
-}
-/* Credit box for documentation */.credit-box {
-  display: inline-block;
-  margin: 0 0 1.5em;
-  padding: 5px 15px 5px 5px;
-  background-color: #e6e6e6;
-  border: 1px solid #b3b3b3;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.credit-box img {
-  float: left;
-  margin: 0 7px 0 0;
-}
-.credit-box .body {
-  float: right;
-  margin-top: 20px;
-}
-.credit-box h3 {
-  font-size: 1em;
-  margin: 0 0 0.25em;
-  padding: 0 0 0.3em;
-  border-bottom: 1px solid #b3b3b3;
 }
 /* Sidebar
 -------------------------------- */

@@ -30,6 +30,10 @@ label, legend, input, select, textarea, .info-error,
     font-family: "Open Sans", sans-serif;
 }
 
+.gist {
+    margin: 0 0 1.5em;
+}
+
 
 /* Header
 -------------------------------- */
@@ -228,6 +232,35 @@ label, legend, input, select, textarea, .info-error,
     }
 }
 
+/* Credit box for documentation */
+.credit-box {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    padding: 5px 15px 5px 5px;
+    background-color: @black-10;
+    border: 1px solid @black-30;
+    .rounded(5px);
+    
+    h3 {
+        font-size: 1em;
+        margin: 0 0 0.25em;
+        padding: 0 0 0.3em;
+        border-bottom: 1px solid @black-30;
+    }
+    
+    @media screen and (min-width: @break-l) {
+        img {
+            float: left;
+            margin: 0 7px 0 0;
+        }
+    
+        .body {
+            float: right;
+            margin-top: 20px;
+        }
+    }
+}
+
 
 /* Main
 -------------------------------- */
@@ -294,33 +327,6 @@ main {
                 padding: 2px 4px;
             }
         }
-    }
-}
-
-/* Credit box for documentation */    
-.credit-box {
-    display: inline-block;
-    margin: 0 0 1.5em;
-    padding: 5px 15px 5px 5px;
-    background-color: @black-10;
-    border: 1px solid @black-30;
-    .rounded(5px);
-    
-    img {
-        float: left;
-        margin: 0 7px 0 0;
-    }
-    
-    .body {
-        float: right;
-        margin-top: 20px;
-    }
-    
-    h3 {
-        font-size: 1em;
-        margin: 0 0 0.25em;
-        padding: 0 0 0.3em;
-        border-bottom: 1px solid @black-30;
     }
 }
 
