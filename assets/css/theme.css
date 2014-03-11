@@ -267,7 +267,7 @@ textarea,
 -------------------------------- */
 main {
   margin: 0 0 1.5em;
-  font-size: 0.9375em;
+  font-size: 1em;
   line-height: 1.4;
 }
 main .article-meta {
@@ -322,7 +322,7 @@ main .image-gallery img {
 /* Sidebar
 -------------------------------- */
 .sidebar {
-  font-size: 0.9375em;
+  font-size: 1em;
   line-height: 1.2;
   margin-bottom: 1.5em;
   text-align: left;
