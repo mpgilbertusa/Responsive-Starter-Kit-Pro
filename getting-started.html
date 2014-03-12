@@ -26,20 +26,48 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     
     <style>
+    .toc {
+        margin-bottom: 1.5em;
+        padding: 1em;
+        border: 1px solid #aaa;
+        background-color: #f2f2f2;
+    }
+    
+    .toc h3 {
+        border-bottom: 1px solid #aaa;
+        margin-top: 0;
+        padding-bottom: 0.25em;
+    }
+        
+    .toc ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .toc ul li {
+        margin: 0 0 0.5em;
+        font-weight: bold;
+    }
+    
+    .toc ul ul {
+        margin: 0.5em 0 0 1.5em;
+        list-style: disc;
+    }
+    
+    .toc ul ul li {
+        font-weight: normal;
+        margin-bottom: 0.15em;
+    }    
+
     @media screen and (min-width: 43.75em) {
-        .sidebar ul li {
-            margin-bottom: 0.5em;
-            font-weight: bold;
-        }
-        
-        .sidebar ul ul {
-            margin: 0.5em 0 0 1.5em;
-            list-style: disc;
-        }
-        
-        .sidebar ul ul li {
-            font-weight: normal;
-            margin-bottom: 0.15em;
+        .toc {
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            width: 30%;
+            margin-bottom: 0;
+            
         }
     }
     </style>
@@ -90,6 +118,34 @@
                         </header>
                         
                         <hr>
+                
+                        <section role="complementary" class="toc">
+                    
+                            <h3>Table of Contents</h3>
+                    
+                            <ul>
+                                <li><a href="#download">Download</a></li>
+                                <li><a href="#whats-included">What's Included</a></li>
+                                <li><a href="#basic-structure">Basic Structure of a Page</a></li>
+                                <li><a href="#code-grids">Columns (Grids)</a>
+                                    <ul>
+                                        <li><a href="#code-grids-two">Two Columns</a></li>
+                                        <li><a href="#code-grids-three">Three Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#code-add-ons">Add-ons</a>
+                                    <ul>
+                                        <li><a href="#code-modals">Modal Dialogs</a></li>
+                                        <li><a href="#code-tabs">Tabs</a></li>
+                                        <li><a href="#code-sliders">Content Carousels</a></li>
+                                        <li><a href="#code-tables">Data Tables</a></li>
+                                        <li><a href="#code-videos">Videos</a></li>
+                                        <li><a href="#code-collapsible">Collapsible Content</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </section><!-- /.toc -->
 
                         <section>
                             
@@ -105,6 +161,8 @@
                                 <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro" class="btn btn-gray">View GitHub Project &rsaquo;</a>
                                 <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro/archive/master.zip" class="btn btn-gray">Download a ZIP &rsaquo;</a>
                             </p>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
                             
                             <hr>
                             
@@ -151,6 +209,8 @@
                                 <li><strong>/assets/js</strong> &ndash; JavaScript files, including sample global and section/page files are included here. You'll also find a small handful of jQuery plugin files.</li>
                             </ul>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
                             <h2 id="basic-structure">Basic Structure of a Page</h2>
@@ -163,9 +223,11 @@
                             
                             <div class="alert alert-info"><strong>Remember:</strong> All of this structure is editable to match your project's design. This is just a starting point.</div>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
-                            <h2 id="code-grids">Code Samples for Columns/Grids</h2>
+                            <h2 id="code-grids">Columns (Grids)</h2>
                             
                             <p>The <a href="style-guide.html" target="_blank">Style Guide page</a> contains several examples of columns/grids that can be used to design your content. Here are some basic code samples to get you started. Refer to the source of the <a href="style-guide.html" target="_blank">Style Guide page</a> for additional code.</p>
                             
@@ -175,6 +237,8 @@
                             
                             <script src="https://gist.github.com/mpgilbertusa/9479041.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <h3 id="code-grids-three">Three Columns</h3>
 
                             <p>Use this HTML code for <strong>three columns</strong>.</p>
@@ -183,9 +247,11 @@
 
                             <div class="alert alert-info"><strong>Note:</strong> Additional columns/grids can be made by using the following classes: <strong>two-thirds</strong>, <strong>one-fourth</strong>, <strong>three-fourths</strong>, <strong>one-fifth</strong>, <strong>two-fifths</strong>, <strong>three-fifths</strong>, <strong>four-fifths</strong>, <strong>one-sixth</strong>, and <strong>five-sixths</strong>.</div>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
-                            <h2 id="code-add-ons">Code Samples for Add-ons</h2>
+                            <h2 id="code-add-ons">Add-ons</h2>
                             
                             <p>The <a href="add-ons.html" target"_blank">Add-ons page</a> contains a handful of useful items that can be added to a page to provide some additional interactivity, such as content carousels, tabbed navigation, and much more. The following code samples (snippets) will help you get started building these add-ons into your pages.</p>
                             
@@ -221,6 +287,8 @@
                             
                             <script src="https://gist.github.com/mpgilbertusa/9479087.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
                             <h3 id="code-tabs">Tabs</h3>
@@ -245,9 +313,11 @@
 
                             <script src="https://gist.github.com/mpgilbertusa/9479401.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
-                            <h3 id="code-sliders">Content Carousels (Sliders)</h3>
+                            <h3 id="code-sliders">Content Carousels</h3>
                             
                             <p>Content carousels (sliders) use the jQuery plugin <a href="http://flexslider.woothemes.com/" target="_blank">FlexSlider</a> by WooThemes. Additional details are available on their site.</p>
 
@@ -262,6 +332,8 @@
                             <p>Use this HTML code to place a <strong>content carousel (slider)</strong> on your page:</p>
                             
                             <script src="https://gist.github.com/mpgilbertusa/9479459.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
                             
                             <hr>
                             
@@ -279,6 +351,8 @@
                             
                             <script src="https://gist.github.com/mpgilbertusa/9486817.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
                             <h3 id="code-videos">Videos</h3>
@@ -291,9 +365,11 @@
                             
                             <script src="https://gist.github.com/mpgilbertusa/9487047.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                             <hr>
                             
-                            <h3 id="code-collapsible">Collapsible Content (Show-Hide)</h3>
+                            <h3 id="code-collapsible">Collapsible Content</h3>
                             
                             <p>Place this code in the <strong>global.js</strong> file:</p>
 
@@ -303,54 +379,32 @@
                             
                             <script src="https://gist.github.com/mpgilbertusa/9487168.js"></script>
                             
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
                         </section>
+                        
+                        <hr>
+                        
+                        <section class="additional-info">
+                    
+                            <h2>Additional Information</h2>
+            
+                            <p>The source files for this starter kit are <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro">hosted on GitHub</a>. Additional technical details can be found there. If you need a bit more help getting started, take a look at the <a href="http://www.mpgilbert.com/responsive-web-design-a-gentle-introduction">video training course</a> that goes with the <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit">basic version</a> of this starter kit.</p>
+                    
+                            <div class="credit-box clearfix">
+                                <img src="http://www.mpgilbert.com/wp-content/uploads/mg-courtyard-circle-sm.png" alt="Michael P. Gilbert">
+                                <div class="body">
+                                    <h3>Michael P. Gilbert</h3>
+                                    <a href="http://www.mpgilbert.com/">www.mpgilbert.com</a><br>
+                                    <a href="http://twitter.com/mpgilbertusa">@mpgilbertusa</a>
+                                </div>
+                            </div>
+                            
+                        </section><!-- /.additional-info -->
 
                     </article>
                 
                 </main>
-                
-                <aside role="complementary" class="sidebar">
-                    
-                    <h3>Table of Contents</h3>
-                    
-                    <ul>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="#whats-included">What's Included</a></li>
-                        <li><a href="#basic-structure">Basic Structure of a Page</a></li>
-                        <li><a href="#code-grids">Code Samples for Columns/Grids</a>
-                            <ul>
-                                <li><a href="#code-grids-two">Two Columns</a></li>
-                                <li><a href="#code-grids-three">Three Columns</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#code-add-ons">Code Samples for Add-ons</a>
-                            <ul>
-                                <li><a href="#code-modals">Modal Dialogs</a></li>
-                                <li><a href="#code-tabs">Tabs</a></li>
-                                <li><a href="#code-sliders">Content Carousels (Sliders)</a></li>
-                                <li><a href="#code-tables">Data Tables</a></li>
-                                <li><a href="#code-videos">Videos</a></li>
-                                <li><a href="#code-collapsible">Collapsible Content (Show-Hide)</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                    <hr>
-    
-                    <h3>Additional Information</h3>
-            
-                    <p>The source files for this starter kit are <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro">hosted on GitHub</a>. Additional technical details can be found there. If you need a bit more help getting started, take a look at the <a href="http://www.mpgilbert.com/responsive-web-design-a-gentle-introduction">video training course</a> that goes with the <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit">basic version</a> of this starter kit.</p>
-                    
-                    <div class="credit-box clearfix">
-                        <img src="http://www.mpgilbert.com/wp-content/uploads/mg-courtyard-circle-sm.png" alt="Michael P. Gilbert">
-                        <div class="body">
-                            <h3>Michael P. Gilbert</h3>
-                            <a href="http://www.mpgilbert.com/">www.mpgilbert.com</a><br>
-                            <a href="http://twitter.com/mpgilbertusa">@mpgilbertusa</a>
-                        </div>
-                    </div>
-
-                </aside><!-- /.sidebar -->
 				
             </div><!-- /.page-content -->
         

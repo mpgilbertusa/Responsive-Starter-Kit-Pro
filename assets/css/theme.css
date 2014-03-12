@@ -254,15 +254,13 @@ textarea,
   padding: 0 0 0.3em;
   border-bottom: 1px solid #b3b3b3;
 }
-@media screen and (min-width: 56.25em) {
-  .credit-box img {
-    float: left;
-    margin: 0 7px 0 0;
-  }
-  .credit-box .body {
-    float: right;
-    margin-top: 20px;
-  }
+.credit-box img {
+  float: left;
+  margin: 0 7px 0 0;
+}
+.credit-box .body {
+  float: right;
+  margin-top: 20px;
 }
 /* Main
 -------------------------------- */
