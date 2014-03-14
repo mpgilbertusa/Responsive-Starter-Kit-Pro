@@ -98,17 +98,10 @@ mark {
 /* -----------------------------
 
    Responsive Starter Kit Pro
-   Mixins Style Sheet
-
-   Credit
-   -----------------
-   Sections of this document
-   were inspired by:
-    + LESS Elements
-    + Preboot
+   Variables Style Sheet
 
 -------------------------------- */
-/* Variables
+/* General
 -------------------------------- */
 /* 16px */
 /* Common Breakpoints
@@ -118,7 +111,18 @@ mark {
 /* Medium: 700px / 16px = 43.75em */
 /* Large: 900px / 16px = 56.25em */
 /* Extra Large: 1100px / 16px = 68.75em */
-/* Vendor Prefixes
+/* -----------------------------
+
+   Responsive Starter Kit Pro
+   Mixins Style Sheet
+
+   Credit
+   -----------------
+   Sections of this document
+   were inspired by:
+    + LESS Elements
+    + Preboot
+
 -------------------------------- */
 /* -----------------------------
 
