@@ -31,7 +31,7 @@ Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit
 * Assorted mixins for border-radius, box-shadow, linear gradients, etc. based on work from LESS Elements and Preboot
 * Mobile first technique emphasizing **progressive enhancement**
 * Proportional media queries - http://blog.cloudfour.com/the-emshave-it-proportional-media-queries-ftw/
-* Don't Overthink It Grids - http://css-tricks.com/dont-overthink-itgrids/
+* Don't Overthink It Grids - http://css-tricks.com/dont-overthink-it-grids/
 * Column widths use %, fixed-width gutters use px, fonts use em, images use "max-width: 100%" and "height: auto"
 * *Box-sizing: Border-box* for everything - http://paulirish.com/2012/box-sizing-border-box-ftw/
 * Uses unitless line-heights for typography - http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
