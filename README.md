@@ -4,7 +4,7 @@ A highly functional toolkit to help jump-start a typical responsive web design p
 
 Sample HTML files are included to demonstrate possible layouts: style guide/sampler, left sidebar, right sidebar, three columns, full width, sample form, and audio/video transcript. There's a basic *theme.css* file in the *assets/css* directory. Feel free to edit, or even delete, this file as needed. It's been included for demonstration purposes only. It's not intended to influence visual and/or user experience design preferences.
 
-If you'd like to take a look at something a bit more basic, you might enjoy the [Responsive Starter Kit](https://github.com/mpgilbertusa/Responsive-Starter-Kit) repository. It's a stripped-down, but still highly-functional, version of this same starter kit.
+If you'd like to take a look at something a bit more basic, you might enjoy the [Responsive Starter Kit Basic](https://github.com/mpgilbertusa/Responsive-Starter-Kit) repository. It's a stripped-down, but still highly-functional, version of this same starter kit.
 
 ## Demo ##
 
@@ -31,7 +31,7 @@ Take a look at the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit
 * Assorted mixins for border-radius, box-shadow, linear gradients, etc. based on work from LESS Elements and Preboot
 * Mobile first technique emphasizing **progressive enhancement**
 * Proportional media queries - http://blog.cloudfour.com/the-emshave-it-proportional-media-queries-ftw/
-* Don't Overthink It Grids - http://css-tricks.com/dont-overthink-itgrids/
+* Don't Overthink It Grids - http://css-tricks.com/dont-overthink-it-grids/
 * Column widths use %, fixed-width gutters use px, fonts use em, images use "max-width: 100%" and "height: auto"
 * *Box-sizing: Border-box* for everything - http://paulirish.com/2012/box-sizing-border-box-ftw/
 * Uses unitless line-heights for typography - http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
